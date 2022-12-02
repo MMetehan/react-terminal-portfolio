@@ -176,7 +176,7 @@ export default function terminal() {
             setTimeout(() => {
               setText("");
               document.getElementById("cursor-bar")?.scrollIntoView();
-            }, 150);
+            }, 500);
           }
         }}
         autoFocus={true}
