@@ -1,0 +1,85 @@
+.terminal{
+    width: 100%;
+    height: 100vh;
+    padding: 16px;
+    overflow: auto;
+    .hidden-textarea{
+        position: absolute;
+        left: -100000000px;
+    }
+
+    .span_name{
+        color: #00C5C7;
+    }
+    .span_seperator{
+        color: #C040BE;
+    }
+    .span_directory{
+        color: #00C5C7;
+    }
+
+    .command-area::before {
+        content: "";
+        margin-left: 12px;
+    }
+
+    .command-area{
+        color: #fff;
+    }
+
+    .faded{
+        font-size: 2vh;
+        color: rgb(178, 178, 178);
+        *{
+            font-size: 2vh;
+        }
+    }
+
+    .not-found{
+        font-size: 1.8vh;
+        .command-not-found-span{
+            color: #C040BE;
+            font-size: 1.8vh;
+        }
+    }
+
+    .spacing-div{
+        height: 16px !important;
+        width: 100% !important;
+    }
+
+    .help-padding{
+        padding: 0px 18px;
+    }
+
+    .help-parent{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        margin-bottom: 12px;
+    }
+    .help-title{
+        text-align: left;
+
+    }
+    .help-description{
+        text-align: left;
+    }
+
+
+    .cursor{
+        display: inline-flex;
+        width: 4px;
+        height: 2.4vh;
+        background-color: #fff;
+        animation: infinite CursorAnimate .6s;
+    }
+
+    @keyframes CursorAnimate {
+        0%{
+            background-color: #fff;
+        }
+        50%{
+            background-color: transparent;
+        }
+    }
+}
