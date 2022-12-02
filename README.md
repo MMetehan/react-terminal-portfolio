@@ -4,12 +4,12 @@ A [React](https://github.com/facebook/react) terminal portfolio page.
 
 ## Installation
 
-1) Clone repository
-
+```
+Clone repository
+```
 ```
 cd react-terminal-portfolio
 ```
-
 ```
 npm i
 ```
